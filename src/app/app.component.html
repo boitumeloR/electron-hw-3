@@ -1,0 +1,24 @@
+﻿<!-- nav
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" >Home</a>
+        <a class="nav-item nav-link" >Users</a>
+    </div>
+</nav> -->
+
+<mat-toolbar color = "primary">
+    <a mat-button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <span>My App</span>
+    </a>
+    <span class="example-spacer"></span>
+    <a mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" routerLink="/users" routerLinkActive="active">
+      Users
+    </a>
+</mat-toolbar>
+
+<!-- main app container -->
+<div class="app-container bg-light">
+    <alert></alert>
+    <router-outlet></router-outlet>
+</div>
+
